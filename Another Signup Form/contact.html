@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	
+    
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	
+	<style type="text/css">
+
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+
+* {margin: 0; padding: 0;}
+
+
+
+
+body {
+	font-family: montserrat, arial, verdana;
+	background: #333;
+}
+
+#contact .title{
+	color:#FFFFFF !important;
+}
+#contact .desc{
+	color:#8aa0b7;
+}
+.container.contact-inner {
+    padding-top: 60px;
+	padding-bottom: 80px;
+	min-height:1200px;
+	height:auto;	
+}
+.contact .header{
+	padding-bottom:15px;
+}
+.contact .form-control{
+	background:#263545;
+	opacity:0.60;
+	color:#8e9dac;
+	border:1px solid #2c3e50;
+	height:60px;
+	border-radius:3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+}
+.contact .form-message{
+	color:#FFFFFF;
+	padding:5px 0 10px;
+	text-align:center;
+}
+.forms .error, .forms .error:focus{
+	border:1px solid #d99898;
+}
+.contact textarea.form-control{
+	height:200px;
+}
+.contact .form-horizontal .form-group{
+	margin:10px 0px;
+}
+#contact .form-control::-moz-placeholder{
+	color:#b4c3d2 !important;
+	opacity:0.98 !important;
+}
+#contact .form-control:focus{
+	color:#b4c3d2 !important;
+	opacity:1 !important;
+}
+#contact .form-control::-webkit-input-placeholder{ 
+	color:#b4c3d2 !important;
+	opacity:1;
+}
+.contact .btn{
+	width:100%;
+	height:60px;
+	padding:16px 0px;
+	color:#FFFFFF;
+	font-size:18px;
+	font-weight:normal;
+	border:0px;
+	border-radius:3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;	
+}
+.contact .btn i{
+	margin:0 5px;
+}
+.contact .btn:hover{
+	background-color:#FFFFFF !important;
+}
+.contact .btn:hover a, .contact .btn:focus a, .contact .btn a {	
+	color:#FFFFFF;
+}
+
+ select{
+   width: 400px;
+   border-radius: 4px;
+   margin-top: 10px;
+   margin-bottom: 20px;
+   cursor: pointer;
+   background-color:#fff;
+
+ }
+ label{
+ 	font-size: 25px;
+
+ }
+      #msform {
+	width: auto; 
+	margin: 50px auto;
+	text-align: center;
+	position: relative;
+}
+#msform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+	
+	/*stacking fieldsets above each other*/
+	position: absolute;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+/*buttons*/
+#msform .action-button {
+	width: 100px;
+	background: #3498DB;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #3498DB
+;
+}
+
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+/*progressbar*/
+#progressbar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+}
+#progressbar li {
+	list-style-type: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 9px;
+	width: 25%;
+	float: left;
+	position: relative;
+}
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: #333;
+	background: white;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+	background: #3498DB;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+	</style>
+
+</head> 
+
+<body>
+
+<section id="contact" class="contact">
+		<div class="container contact-inner">
+			<!-- Title & Desc Row Begins -->
+			<div class="row">
+				<div class="col-md-12 header text-center">
+					<!-- Title -->
+					<h2 class="title capitalize">Get your Presenter</h2>
+					<!-- Description -->
+					<p class="desc">Complete the below form in 3 steps to send us the requirements of your project, we will get back to you within 2 business days.</p>
+				</div>
+			</div><!-- Title & Desc Row Ends -->
+
+			<!-- Contact Row Begins -->
+
+        <div class="row">
+				<div class="col-md-8 col-md-offset-2 animated" data-animation="fadeInUp" data-animation-delay="300">
+				<p class="form-message" style="display: none;" id="msform"></p>
+					<div class="contact-form">
+						<!-- Form Begins -->
+						<form role="form" id="msform" method="post" action="process.php">
+                        	<!-- progressbar -->
+                            <ul id="progressbar">
+                                <li class="active">Basic Info</li>
+                                <li>Business Needs</li>
+                                <li>Package Features</li>
+                                <li>Select Workshop</li>
+                            </ul>
+                   
+                            <fieldset>
+                            <h2 class="fs-title">Basic Info</h2>
+                            <h3 class="fs-subtitle">This is step 1</h3>
+								<input type="text" name="first_name" class="input-name form-control" placeholder="First Name" />
+								<input type="text" name="last_name" class="form-control" placeholder="Last Name"/>
+								<input type="email" name="email" class="form-control" placeholder="E-mail"/>
+								<input type="text" name="mobile" class="form-control" placeholder="Mobile"/>
+								<input type="text" name="company" class="input-name form-control" placeholder="Company" />
+								<input type="text" name="job_title" class="form-control" placeholder="Job Title"/>
+								<input type="button" name="next" class="next action-button" value="Next"/>
+                            </fieldset>
+                    
+
+                  
+                         
+                    
+                         <fieldset>
+                            <h2 class="fs-title">Business Needs</h2>
+                            <h3 class="fs-subtitle">This is step 2</h3>
+                             <label>Job Function</label><br>
+                              <select size="7">
+                              	 
+                                 <option value="Executive Management">Executive Management</option>
+                                 <option value="Marketing">Marketing</option>
+                                 <option value="Sales">Sales</option>
+                                 <option value="Technology">Technology</option>
+                                 <option value="Business Development">Business Development</option>
+                                 <option value="Administration">Administration</option>
+                                 <option value="Operations &amp; Project Management">Operations &amp; Project Management</option>
+                                 <option value="Human Resources">Human Resources</option>
+                                 <option value="Accounting &amp; Finance">Accounting &amp; Finance</option>
+                                 <option value="Legal">Legal</option>
+                                 <option value="Other">Other</option>
+                             </select>
+                             <br>
+                             <input type="button" name="previous" class="previous action-button" value="Previous"/>
+							 <input type="button" name="next" class="next action-button" value="Next"/>
+                
+           
+                    </fieldset>
+
+                    <fieldset>
+
+                    <h2 class="fs-title">PACKAGE FEATURES</h2>
+                    <h3 class="fs-subtitle">This is step 3</h3>
+
+
+                    <label>Primary Sector</label><br>
+                <select size="7">
+                	
+                    <option value="Tourism &amp; Hospitality">Tourism &amp; Hospitality</option>
+                    <option value="Technology">Technology</option>
+                    <option value="AgriBusiness">AgriBusiness</option>
+                    <option value="Food &amp; Beverage">Food &amp; Beverage</option>
+                    <option value="Renewable Energy">Renewable Energy</option>
+                    <option value="Logistics &amp; Transport">Logistics &amp; Transport</option>
+                    <option value="Sports &amp; Entertainment">Sports &amp; Entertainment</option>
+                    <option value="Education">Education</option>
+                    <option value="Training &amp; Development">Training &amp; Development</option>
+                    <option value="Art &amp; Culture">Art &amp; Culture</option>
+                    <option value="Media &amp; Publishing">Media &amp; Publishing</option>
+                    <option value="Fashion &amp; Apparel">Fashion &amp; Apparel</option>
+                    <option value="Knowledge &amp; Consulting">Knowledge &amp; Consulting</option>
+                    <option value="Nonprofit &amp; Development">Nonprofit &amp; Development</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Pharmaceuticals">Pharmaceuticals</option>
+                    <option value="Petrochemicals">Petrochemicals</option>
+                    <option value="Real Estate &amp; Construction">Real Estate &amp; Construction</option>
+                    <option value="Retail &amp; Wholesale">Retail &amp; Wholesale</option>
+                    <option value="Financial Services">Financial Services</option>
+                    <option value="Manufacturing">Manufacturing</option>
+                    <option value="Electronics &amp; Hardware">Electronics &amp; Hardware</option>
+                    <option value="Networks &amp; Connectivity (Telecom)">Networks &amp; Connectivity (Telecom)</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <br>
+
+                <input type="button" name="previous" class="previous action-button" value="Previous"/>
+				<input type="button" name="next" class="next action-button" value="Next"/>
+                
+                </fieldset>
+
+
+
+                <fieldset>
+
+                	<h2 class="fs-title">Select Workshop</h2>
+                    <h3 class="fs-subtitle">This is step 4</h3>
+
+
+                     <label>Workshop Title</label> <br>
+                <select>
+                   <!-- <option value="" >Which Workshop would you like to signup to?</option>-->
+                    <option value="Competitive Strategy Workshop" style="display:none">Competitive Strategy</option>
+                    <option value="Create your online business from scratch" style="display:none">Create your online business from scratch</option>
+                    <option value="Become a CEO" style="display:none">Become a CEO</option>
+                    <option value="How to raise funds for your business?" style="display:none">How to raise funds for your business?</option>
+                    <option value="Geek to CTO/ CEO" style="display:none">Geek to CTO/ CEO</option>
+                    <option value="Start your business - Step by Step" style="display:none">Start your business - Step by Step</option>
+                    <option value="Internet Marketing Hackathon" style="display:none">Internet Marketing Hackathon</option>
+                    <option value="Pitching for Funding" style="display:none">Pitching for Funding</option>
+                    <option value="Scaling Operations" style="display:none">Scaling Operations</option>
+                    <option value="Public Speaking for Business Executives" style="display:none">Public Speaking for Business Executives</option>
+                    <option value="Leadership &amp; Social Dynamics" style="display:none">Leadership &amp; Social Dynamics</option>
+                    <option value="Goal Setting" style="display:none">Goal Setting</option>
+                </select>
+
+                 <br>
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+				<input type="submit" name="submit" class="submit action-button" value="Submit"/>
+
+
+                </fieldset>
+     
+ 
+
+  
+             
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+   <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    
+    <script type="text/javascript" src="js/custom.js"></script>
+
